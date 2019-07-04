@@ -63,12 +63,12 @@
   
         <div class="form-group">
             <label for="firstname">First Name</label>
-            <input type="text" class="form-control" name="firstname" placeholder="Enter Firstname">
+            <input type="text" class="form-control" name="firstname" placeholder="Enter Firstname" value="<?php echo set_value('firstname');?>">
             <span class="text danger"><?php echo form_error("firstname");?></span>
         </div>
         <div class="form-group">
             <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" name="lastname" placeholder="Enter Lastname">
+            <input type="text" class="form-control" name="lastname" placeholder="Enter Lastname" value="<?php echo set_value('lastname');?>">
             <span class="text danger"><?php echo form_error("lastname");?></span>
         </div>
         <input type="submit" name="insert" value="Insert" class="btn btn-primary"/>
